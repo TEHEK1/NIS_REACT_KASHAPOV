@@ -20,17 +20,6 @@ export const getMoodColor = (mood: Mood): string => {
   return colors[mood];
 };
 
-export const getMoodEmoji = (mood: Mood): string => {
-  const emojis: Record<Mood, string> = {
-    happy: '😊',
-    excited: '🤩',
-    neutral: '😐',
-    sad: '😢',
-    sleeping: '😴',
-  };
-  return emojis[mood];
-};
-
 export const formatTimestamp = (): string => {
   return new Date().toLocaleTimeString('ru-RU');
 };
